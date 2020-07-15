@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+h3{
+    font-size: 25px;
+    color: #273c75;
+}
+p{
+    overflow-y: scroll;
+    height: 500px;
+    width: 700px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:#2ecc71;
+  font-family: 'Amiri', serif;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: orange;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c7ecee;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: #535c68;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 750px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+    text-align:center;
+    width: 350px;
+    height: 250px;
+    position: fixed;
+    margin: 80px;
+    background-color: #ffffff;
+
+    border-radius: 10px;
+    padding:50px;
+    
+    bottom: 10px;
+    right: 20px;
+}
+h4{
+    margin-bottom:0px;
+   align-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 22px;
+    /*background-color: #badc58;*/
+    font-size: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div>
+        <h4>w3schools<span style="color:#228B22">.com</span></h4>
+        <!-- <p>THE WORLD'S LARGEST WEB DEVELOPER SITE</p> -->
+    </div>
+
+<div class="navbar">
+  <a href="#">Tutorials</a>
+  <a href="#">References</a>
+  <a href="#Exercise">Exercise</a>
+  <div class="dropdown">
+    <button class="dropbtn">Example
+      <!-- <i class="fa fa-caret-down"></i> -->
+    </button>
+    <div class="dropdown-content">
+      <!-- <div class="header"> -->
+        <!-- <h2>Mega Menu</h2> -->
+      <!-- </div>    -->
+      <div class="row">
+        <div class="column">
+          <h3>HTML and CSS</h3>
+          <a href="#">HTML Examples</a>
+          <a href="#">CSS Examples</a>
+          <a href="#">W3.CSS Examples</a>
+          <a href="#">Bootstrap Examples</a>
+          <a href="#">How To Examples</a>
+          <a href="#">SVG Examples</a>
+          <a href="#">Web Template</a>
+        </div>
+        <div class="column">
+          <h3>JavaScript</h3>
+          <a href="#">JavaScript Examples</a>
+          <a href="#">HTML DOM Examples</a>
+          <a href="#">jQuery Examples</a>
+          <a href="#">AngularJS Examples</a>
+          <a href="#">AJAX Examples</a>
+          <a href="#">W3.JS Examples</a>
+        </div>
+        <div class="column">
+          <h3>Server Side</h3>
+          <a href="#">SQL Examples</a>
+          <a href="#"> PHP Examples</a>
+          <a href="#">ASP Examples</a>
+        </div>
+        <div class="column">
+          <h1 style="font-family: 'Amiri', serif;"> Register Here</h1><br>
+
+        <form id="register">
+        <label>First Name :</label>
+        <input type="text" name="First Name" placeholder="First Name"><br><br>
+        <label>Last Name :</label>
+        <input type="text" name="Last Name" placeholder="Last Name"><br><br>
+        <label>Email Id :</label>
+        <input type="text" name="" placeholder="email@gmail.com"><br><br>
+        <label>Mobile No :</label>
+        
+        <input type="tel" placeholder=" 9679985972" min="10" max="10"><br><br>
+        <label>Password :</label>
+        <input type="text number" name="" placeholder="password@123"><br><br>
+        <!-- <button class="button"><a href="#">Register </a></button> -->
+        <div style="padding-left: 125px;">
+            <input type="submit" name="" value="Sign Up">
+        </div>
+            
+        </form> 
+        
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div style="padding:16px">
+  <h3>Full Stack Web Development</h3>
+  <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web-based internet applications (web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development.
+
+Among web professionals, "web development" usually refers to the main non-design aspects of building websites: writing markup and coding.[2] Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
+
+For larger organizations and businesses, web development teams can consist of hundreds of people (web developers) and follow standard methods like Agile methodologies while developing websites. Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of web developer specialization: front-end developer, back-end developer, and full-stack developer. Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers 
+Since the commercialization of the web, web development has been a growing industry. The growth of this industry is being driven by businesses wishing to use their website to advertise and sell products and services to customers.[3]
+
+There are many open source tools for web development such as BerkeleyDB, GlassFish, LAMP (Linux, Apache, MySQL, PHP) stack and Perl/Plack. This has kept the cost of learning web development to a minimum. Another contributing factor to the growth of the industry has been the rise of easy-to-use WYSIWYG web-development software, such as Adobe Dreamweaver, BlueGriffon and Microsoft Visual Studio. Knowledge of HyperText Markup Language (HTML) or of programming languages is still required to use such software, but the basics can be learned and implemented quickly.
+
+An ever-growing set of tools and technologies have helped developers build more dynamic and interactive websites. Further, web developers now help to deliver applications as web services which were traditionally only available as applications on a desk-based computer. This has allowed for many opportunities to decentralize information and media distribution. Examples can be seen with the rise of cloud services such as Adobe Creative Cloud, Dropbox and Google Drive. These web services allow users to interact with applications from many locations, instead of being tied to a specific workstation for their application environment.
+
+Examples of dramatic transformation in communication and commerce led by web development include e-commerce. Online auction sites such as eBay have changed the way consumers find and purchase goods and services. Online retailers such as Amazon.com and Buy.com (among many others) have transformed the shopping and bargain-hunting experience for many consumers. Another example of transformative communication led by web development is the blog. Web applications such as WordPress and Movable Type have created blog-environments for individual websites. The increased usage of open-source content management systems and enterprise content management systems has extended web development's impact at online interaction and communication.
+
+Web development has also impacted personal networking and marketing. Websites are no longer simply tools for work or for commerce, but serve more broadly for communication and social networking. Web sites such as Facebook and Twitter provide users with a platform to communicate and organizations with a more personal and interactive way to engage the public.</p>
+</div>
+
+</body>
+</html>
